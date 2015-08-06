@@ -1,0 +1,412 @@
+<header class="cd-header">
+        <div id="cd-logo"><a href="#0"><img src="images/cd-logo.svg" alt="Logo"></a></div>
+        <nav class="cd-main-nav">
+            <ul>         
+                <li><a href="">Login with Facebook</a></li>
+                <li><a href="">Log in</a></li>
+            </ul>
+        </nav>
+</header>
+
+<div class="cd-main-content">
+    <div class="cd-fixed-bg cd-bg-1">
+        <div class="init-search">
+            <div class="col-md-3">
+                 <md-input-container flex>
+                  <label>City</label>
+                  <input ng-model="currentLocation">
+                </md-input-container>
+            </div>  
+             <div class="col-md-6 ">
+                  <md-autocomplete flex=""
+                      ng-disabled="initSearch.isDisabled"
+                      md-no-cache="noCache"
+                      md-selected-item="initSearch.selectedItem"
+                      md-search-text-change="initSearch.searchTextChange(searchText)"
+                      md-search-text="initSearch.searchText"
+                      md-selected-item-change="initSearch.selectedItemChange(item)"
+                      md-items="item in initSearch.querySearch(initSearch.searchText)"
+                      md-item-text="item.name"
+                      md-min-length="0"
+                    md-floating-label="Location,category,shops"
+                      md-menu-class="autocomplete-custom-template">
+                    <md-item-template>
+                      <span class="item-title">
+                        <span> {{item.name}} </span>
+                      </span>
+                      <span class="item-metadata">
+                        <span class="item-metastat">
+                          <strong>{{item.outlets}}</strong> outlets
+                        </span>
+                        <span class="item-metastat">
+                          <strong>{{item.type}}</strong> type
+                        </span>
+                      </span>
+                    </md-item-template>
+                    </md-autocomplete> 
+                </div> 
+          <div class="col-md-1">
+                <md-button class="md-raised md-primary">Search</md-button>
+            </div>
+      </div>        
+    </div> 
+    
+    <div class="cd-scrolling-bg cd-color-2" >
+         <div class="boxx effect1 col-md-3">
+            <h3>Effect 1</h3>
+        </div>
+        <div class="boxx effect1 col-md-3">
+            <h3>Effect 1</h3>
+        </div>
+        <div class="boxx effect1 col-md-3">
+            <h3>Effect 1</h3>
+        </div>
+        <div class="boxx effect1 col-md-3">
+            <h3>Effect 1</h3>
+        </div>
+        <div class="boxx effect1 col-md-3">
+            <h3>Effect 1</h3>
+        </div>
+        <div class="boxx effect1 col-md-3">
+            <h3>Effect 1</h3>
+        </div>
+        <div class="boxx effect1 col-md-3">
+            <h3>Effect 1</h3>
+        </div>
+        <div class="boxx effect1 col-md-3">
+            <h3>Effect 1</h3>
+        </div>
+        <div class="boxx effect1 col-md-3">
+            <h3>Effect 1</h3>
+        </div>
+        <div class="boxx effect1 col-md-3">
+            <h3>Effect 1</h3>
+        </div>
+        <div class="boxx effect1 col-md-3">
+            <h3>Effect 1</h3>
+        </div>
+        <div class="boxx effect1 col-md-3">
+            <h3>Effect 1</h3>
+        </div>        
+        <section class="cd-section"> 
+            <div class="cd-modal-action">
+                <a href="" class="btn"></a>
+                <span class="cd-modal-bg"></span>
+            </div>
+        </section>
+    </div>
+
+    <div class="cd-fixed-bg cd-bg-2 cd-fixed-bg-status">
+        <h2>Shops,Users status</h2>
+     </div> 
+
+    <div class="cd-scrolling-bg cd-color-2">
+        <div>
+            <div>
+                <a href="" class='wide blue col-md-3'>
+                    <i class="icon-home"></i>
+                    <h2>Show Desktop</h2>
+                </a>
+                <a href="" class='wide orange col-md-2'>
+                    <i class="icon-cog"></i>
+                    <h2>Settings</h2>
+                </a>
+                <a href="" class='box redgay col-md-2'>
+                    <i class="icon-globe"></i>
+                    <h2>Browser</h2>
+                </a>
+                <a href="" class='box redgay col-md-2'>
+                    <i class="icon-camera"></i>
+                    <h2>Camera</h2>
+                </a>
+                <a href="" class='box lime col-md-2'>
+                    <i class="icon-heart"></i>
+                    <h2>Favorite</h2>
+                </a>
+                <a href="" class='box bluefish col-md-2'>
+                    <i class="icon-twitter"></i>
+                    <h2>Twitter</h2>
+                </a>
+                <a href="" class='box yellow col-md-2'>
+                    <i class="icon-map-marker"></i>
+                    <h2>Places</h2>
+                </a>
+                <a href="" class='wide magenta col-md-3'>
+                    <h2>Gallery</h2>
+                </a>
+                <a href="" class='box redgay col-md-2'>
+                    <i class="icon-globe"></i>
+                    <h2>Browser</h2>
+                </a>
+                <a href="" class='box orange col-md-2'>
+                    <i class="icon-envelope-alt"></i>
+                    <h2>E-mail</h2>
+                </a>
+                <a href="" class='wide blue cal_e col-md-3'>
+                    <h1>25</h1><p>Monday</p>
+                    <h2 class="top cal_i">Sena Birthday Party At Jack House on 07:00 PM</h2>
+                    <i class="icon-calendar"></i>
+                </a>
+                <a href="" class='box lime col-md-2'>
+                    <i class="icon-cloud"></i>
+                    <h2>SkyDrive</h2>
+                </a>
+                <a href="" class='box blue col-md-2'>
+                    <i class="icon-facebook"></i>
+                    <h2>Facebook</h2>
+                </a>
+                <a href="" class='box bluefish col-md-2'>
+                    <i class="icon-facetime-video"></i>
+                    <h2>FaceTime</h2>
+                </a>
+                <a href="" class='box redgay col-md-2'>
+                    <i class="icon-tasks"></i>
+                    <h2>Task</h2>
+                </a>
+                <a href="" class='box magenta col-md-2'>
+                    <i class="icon-list-alt"></i>
+                    <h2>Windows Explorer</h2>
+                </a>
+                <a href="" class='wide yellow col-md-3'>
+                    <i class="icon-play"></i>
+                    <h2>Media</h2>
+                </a>
+                 <a href="" class='box lime col-md-2'>
+                    <i class="icon-heart"></i>
+                    <h2>Favorite</h2>
+                </a>
+                <a href="" class='box bluefish col-md-2'>
+                    <i class="icon-twitter"></i>
+                    <h2>Twitter</h2>
+                </a>
+                <a href="" class='box yellow col-md-2'>
+                    <i class="icon-map-marker"></i>
+                    <h2>Places</h2>
+                </a>
+            </div>
+        </div> 
+    </div> 
+
+    <div class="cd-scrolling-bg cd-color-1 cd-scrolling-testimonials">
+        <div>
+            <div class="cd-testimonials-wrapper cd-container">
+                <ul class="cd-testimonials">
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="cd-author">
+                            <img src="images/avatar-1.jpg" alt="Author image">
+                            <ul class="cd-author-info">
+                                <li>MyName</li>
+                                <li>CEO, AmberCreative</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ea, perferendis error repudiandae numquam dolor fuga temporibus. Unde omnis, consequuntur.</p>
+                        <div class="cd-author">
+                            <img src="images/avatar-2.jpg" alt="Author image">
+                            <ul class="cd-author-info">
+                                <li>MyName</li>
+                                <li>Designer, CodyHouse</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam totam nulla est, illo molestiae maxime officiis, quae ad, ipsum vitae deserunt molestias eius alias.</p>
+                        <div class="cd-author">
+                            <img src="images/avatar-3.jpg" alt="Author image">
+                            <ul class="cd-author-info">
+                                <li>MyName</li>
+                                <li>CEO, CompanyName</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul> 
+                <a class="cd-see-all">See all</a>
+            </div> 
+
+            <div class="cd-testimonials-all">
+                <div class="cd-testimonials-all-wrapper">
+                    <ul>
+                        <li class="cd-testimonials-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit totam saepe iste maiores neque animi molestias nihil illum nisi temporibus.</p>
+                            
+                            <div class="cd-author">
+                                <img src="images/avatar-1.jpg" alt="Author image">
+                                <ul class="cd-author-info">
+                                    <li>MyName</li>
+                                    <li>CEO, CompanyName</li>
+                                </ul>
+                            </div> <!-- cd-author -->
+                        </li>
+
+                        <li class="cd-testimonials-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nostrum nisi, doloremque error hic nam nemo doloribus porro impedit perferendis. Tempora, distinctio hic suscipit. At ullam eaque atque recusandae modi fugiat voluptatem laborum laboriosam rerum, consequatur reprehenderit omnis, enim pariatur nam, quidem, quas vel reiciendis aspernatur consequuntur. Commodi quasi enim, nisi alias fugit architecto, doloremque, eligendi quam autem exercitationem consectetur.</p>
+                            
+                            <div class="cd-author">
+                                <img src="images/avatar-2.jpg" alt="Author image">
+                                <ul class="cd-author-info">
+                                    <li>MyName</li>
+                                    <li>CEO, CompanyName</li>
+                                </ul>
+                            </div> <!-- cd-author -->
+                        </li>
+
+                        <li class="cd-testimonials-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quibusdam eveniet, molestiae laborum voluptatibus minima hic quasi accusamus ut facere, eius expedita, voluptatem? Repellat incidunt veniam quaerat, qui laboriosam dicta. Quidem ducimus laudantium dolorum enim qui at ipsum, a error.</p>
+                            
+                            <div class="cd-author">
+                                <img src="images/avatar-3.jpg" alt="Author image">
+                                <ul class="cd-author-info">
+                                    <li>MyName</li>
+                                    <li>CEO, CompanyName</li>
+                                </ul>
+                            </div> <!-- cd-author -->
+                        </li>
+
+                        <li class="cd-testimonials-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptates officiis tempore quae officia! Beatae quia deleniti cum corporis eos perferendis libero reiciendis nemo iusto accusamus, debitis tempora voluptas praesentium repudiandae laboriosam excepturi laborum, nisi optio repellat explicabo, incidunt ex numquam. Ullam perferendis officiis harum doloribus quae corrupti minima quia, aliquam nostrum expedita pariatur maxime repellat, voluptas sunt unde, inventore.</p>
+                            
+                            <div class="cd-author">
+                                <img src="images/avatar-4.jpg" alt="Author image">
+                                <ul class="cd-author-info">
+                                    <li>MyName</li>
+                                    <li>CEO, CompanyName</li>
+                                </ul>
+                            </div> <!-- cd-author -->
+                        </li>
+
+                        <li class="cd-testimonials-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit totam saepe iste maiores neque animi molestias nihil illum nisi temporibus.</p>
+                            
+                            <div class="cd-author">
+                                <img src="images/avatar-5.jpg" alt="Author image">
+                                <ul class="cd-author-info">
+                                    <li>MyName</li>
+                                    <li>CEO, CompanyName</li>
+                                </ul>
+                            </div> <!-- cd-author -->
+                        </li>
+
+                        <li class="cd-testimonials-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quia quas, quis illo adipisci voluptate ex harum iste commodi nulla dolor. Eius ratione quod ab!</p>
+                            
+                            <div class="cd-author">
+                                <img src="images/avatar-6.jpg" alt="Author image">
+                                <ul class="cd-author-info">
+                                    <li>MyName</li>
+                                    <li>CEO, CompanyName</li>
+                                </ul>
+                            </div> <!-- cd-author -->
+                        </li>
+
+                        <li class="cd-testimonials-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dignissimos iure rem fugiat consequuntur officiis.</p>
+                            
+                            <div class="cd-author">
+                                <img src="images/avatar-1.jpg" alt="Author image">
+                                <ul class="cd-author-info">
+                                    <li>MyName</li>
+                                    <li>CEO, CompanyName</li>
+                                </ul>
+                            </div> <!-- cd-author -->
+                        </li>
+
+                        <li class="cd-testimonials-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At temporibus tempora necessitatibus reiciendis provident deserunt maxime sit id. Dicta aut voluptatibus placeat quibusdam vel, dolore.</p>
+                            
+                            <div class="cd-author">
+                                <img src="images/avatar-2.jpg" alt="Author image">
+                                <ul class="cd-author-info">
+                                    <li>MyName</li>
+                                    <li>CEO, CompanyName</li>
+                                </ul>
+                            </div> <!-- cd-author -->
+                        </li>
+
+                        <li class="cd-testimonials-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis iusto sapiente, excepturi velit, beatae possimus est tenetur cumque fugit tempore dolore fugiat! Recusandae, vel suscipit? Perspiciatis non similique sint suscipit officia illo, accusamus dolorum, voluptate vitae quia ea amet optio magni voluptatem nemo, natus nihil.</p>
+                            
+                            <div class="cd-author">
+                                <img src="images/avatar-3.jpg" alt="Author image">
+                                <ul class="cd-author-info">
+                                    <li>MyName</li>
+                                    <li>CEO, CompanyName</li>
+                                </ul>
+                            </div> <!-- cd-author -->
+                        </li>
+
+                        <li class="cd-testimonials-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quasi officiis pariatur, fugit minus omnis animi ut assumenda quod commodi, ad a alias maxime unde suscipit magnam, voluptas laboriosam ipsam quibusdam quidem, dolorem deleniti id.</p>
+                            
+                            <div class="cd-author">
+                                <img src="images/avatar-4.jpg" alt="Author image">
+                                <ul class="cd-author-info">
+                                    <li>MyName</li>
+                                    <li>CEO, CompanyName</li>
+                                </ul>
+                            </div> <!-- cd-author -->
+                        </li>
+
+                        <li class="cd-testimonials-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At temporibus tempora necessitatibus reiciendis provident deserunt maxime sit id. Dicta aut voluptatibus placeat quibusdam vel, dolore.</p>
+                            
+                            <div class="cd-author">
+                                <img src="images/avatar-5.jpg" alt="Author image">
+                                <ul class="cd-author-info">
+                                    <li>MyName</li>
+                                    <li>CEO, CompanyName</li>
+                                </ul>
+                            </div> <!-- cd-author -->
+                        </li>
+
+                        <li class="cd-testimonials-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque tempore ipsam, eos suscipit nostrum molestias reprehenderit, rerum amet cum similique a, ipsum soluta delectus explicabo nihil repellat incidunt! Minima magni possimus mollitia deserunt facere, tempore earum modi, ea ipsa dicta temporibus suscipit quidem ut quibusdam vero voluptatibus nostrum excepturi explicabo nulla harum, molestiae alias. Ab, quidem rem fugit delectus quod.</p>
+                            
+                            <div class="cd-author">
+                                <img src="images/avatar-6.jpg" alt="Author image">
+                                <ul class="cd-author-info">
+                                    <li>MyName</li>
+                                    <li>CEO, CompanyName</li>
+                                </ul>
+                            </div> <!-- cd-author -->
+                        </li>
+                    </ul>
+                </div> 
+                <a href="" class="close-btn">Close</a>
+            </div> 
+        </div> 
+    </div> 
+
+    <div class="cd-fixed-bg cd-bg-4 cd-fixed-bg-subscription">
+        <form action="#" method="post">
+          <div class="input col-md-6 col-md-offset-3">
+            <input type="text" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
+            <input type="submit" class="button" id="submit" value="SIGN UP">
+          </div>
+    </form>     
+    </div> 
+
+    <div class="cd-scrolling-bg cd-color-3 footer-container">
+        <div class="cd-container">
+            <div class="footer-content">
+            <ul>
+                <li>Home</li>
+                <li>Blog</li>
+                <li>Contacts</li>
+                <li>About</li>
+            </ul>
+            <ul>
+                <li><i class="icomoon-facebook"></i></li>
+                <li><i class="icomoon-google-plus"></i></li>
+                <li><i class="icomoon-twitter"></i></li>
+            </ul>
+        </div>
+        <div class="copy-right">
+            All rights reserved.
+        </div>     
+        </div> 
+    </div> 
+</div>
